@@ -8,7 +8,7 @@ const CategoryNews = () => {
 
   const data = useLoaderData();
   const [categoryNews, setCategoryNews] = useState([]);
-  console.log(categoryNews);
+  // console.log(categoryNews);
 
   // console.log(id, data);
   useEffect(() => {

@@ -1,7 +1,9 @@
 import { FaStar, FaEye, FaRegBookmark, FaShareAlt } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const NewsCard = ({ news }) => {
-  const { title, author, rating, total_view, thumbnail_url, details } = news;
+  const { title, author, rating, total_view, thumbnail_url, details, id } =
+    news;
 
   return (
     <div className="card shadow-xl bg-base-100 ">
@@ -29,14 +31,26 @@ const NewsCard = ({ news }) => {
         <img
           src={thumbnail_url}
           alt="Thumbnail"
-          className="w-full h-56 object-cover"
+          className="w-full  object-cover"
         />
       </figure>
 
       <div className="card-body space-y-3">
         <h2 className="card-title text-lg">{title}</h2>
         <p className="text-sm text-gray-700">
-          {details.length > 200 ? `${details.slice(0, 200)}...` : details}
+          {details.length > 200 ? (
+            <>
+              {details.slice(0, 200)}... <br />
+              <Link
+                to={`/news-details/${id}`}
+                className="text-blue-500 font-semibold cursor-pointer underline "
+              >
+                Reed more
+              </Link>
+            </>
+          ) : (
+            details
+          )}
         </p>
         <div className="flex justify-between items-center mt-2 text-sm text-gray-600">
           <div className="flex items-center gap-1">

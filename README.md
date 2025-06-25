@@ -1,12 +1,60 @@
-# React + Vite
+# Latest News - Frontend News Portal (React App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# live link : maniacal-reason.surge.sh
 
-Currently, two official plugins are available:
+## Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A React-based news portal frontend application featuring categorized news
+browsing (Breaking, Business, Technology, Health, Sports) with Firebase
+authentication. This is the frontend-only implementation without backend
+packaging.
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone repository:
+
+```bash
+git clone https://github.com/yourusername/latest-news-frontend.git
+```
+
+2. Install dependencies:
+
+```bash
+cd latest-news-frontend
+npm install
+```
+
+3. Configure Firebase: Create `.env.local` file with:
+
+```
+REACT_APP_FIREBASE_API_KEY=your_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_id
+```
+
+4. Run development server:
+
+```bash
+npm start
+```
+
+## Key Features
+
+- News category filtering
+- Firebase user authentication
+- Responsive UI
+- News detail pages
+- Mock news data implementation
+
+## Development Notes
+
+- Uses React Context for state management
+- Implements protected routes
+- Mock data located in `src/data/`
+- No backend API integration yet
+
+## Available Scripts
+
+- `npm start` - Runs development server
+- `npm run build` - Creates production build
+- `npm test` - Runs tests

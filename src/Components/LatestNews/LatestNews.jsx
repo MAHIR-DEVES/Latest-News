@@ -10,7 +10,7 @@ const LatestNews = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
           consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
           consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Similique, consectetur. end |||
+          Similique, consectetur. |||end |||
         </p>
       </Marquee>
     </div>
